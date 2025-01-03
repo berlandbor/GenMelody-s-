@@ -375,7 +375,7 @@ function playNote(note, duration) {
 const saveAudioButton = document.getElementById("saveAudio");
 
 // Создаем аудиоконтекст и буфер записи
-const offlineAudioContext = new OfflineAudioContext(1, 44100 * 4, 44100); // 10 секунд буфера
+const offlineAudioContext = new OfflineAudioContext(1, 44100 * 10, 44100); // 10 секунд буфера
 const masterGain = offlineAudioContext.createGain();
 masterGain.connect(offlineAudioContext.destination);
 
